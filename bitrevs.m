@@ -1,0 +1,14 @@
+I1=imread('a1.bmp');
+I2=imread('b1.bmp');
+I11=brev(I1);
+I12=brev(I2);
+%imshow(I11);
+%imshow(I11);
+R=dxr(I11,I12);
+R=uint8(R);
+%imshow(R);
+n1=dxr(I11,R);
+n1=uint8(n1);
+n2=uint8(dxr(I12,R));
+s1=n1;
+s2=n2;
